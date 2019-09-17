@@ -1,0 +1,218 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="doMain.INS.Presentation.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+
+    <link href="Style/StyleINS.css" rel="stylesheet" />
+ 
+    
+    
+     
+    <!--
+        <link href="Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="Scripts/jquery-1.11.2.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <link href="Scripts/themes/black-tie/jquery-ui.css" rel="stylesheet" />
+    <link href="Style/Styles_MasterPage.css" rel="stylesheet" />
+
+    -->
+
+    <style type="text/css">
+    .nav
+    {
+        width:100%;
+        padding-left:15px;
+    }
+ 
+</style> 
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+     <script type="text/javascript">
+
+        $(document).ready(function () {         
+            $.ajax({
+                url: 'MenuHandler.ashx',
+                method: 'get',
+                dataType: 'json',
+                success: function (data) {
+                    buildMenu($('#menu'), data);
+                    $('#menu').menu();
+                }
+            });
+
+            function buildMenu(parent, items) {
+                $.each(items, function () {
+                    var li = $('<li>' + this.Modulo + '</li>');
+                    if (!this.Estado) {
+                        li.addClass('ui-state-disabled');
+                    }
+                    li.appendTo(parent);
+
+                    if (this.List && this.List.length > 0) {
+                        var ul = $('<ul></ul>');
+                        ul.appendTo(li);
+                        buildMenu(ul, this.List);
+                    }
+                });
+            }
+
+        });
+     </script>
+
+     <%--Toggles the icon ?--%>
+     <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle-login').click(function () {
+                $(this).next('#login-content').slideToggle();
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+                else $(this).find('span').html('&#x25BC;')
+            })
+        });
+     </script>
+     <%--Handling Menu and items--%>
+
+     <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".mainmenu").click(function () {
+                var X = $(this).attr('id');
+                if (X == 1) {
+                    $(".submenu").hide();
+                    $(this).attr('id', '0');
+                }
+                else {
+                    $(".submenu").show();
+                    $(this).attr('id', '1');
+                }
+            });
+
+            //Mouse click on sub menus
+            $(".submenu").mouseup(function () {
+                return false
+            });
+
+            //Mouse click on my account link
+            $(".mainmenu").mouseup(function () {
+                return false
+            });
+
+
+            //On Document Click
+            $(document).mouseup(function () {
+                $(".submenu").hide();
+                $(".mainmenu").attr('id', '');
+            });
+        });
+    </script>
+
+
+     
+
+</head>
+
+<body>
+    <form  id="frmRol" runat="server">
+      
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Para obtener más información sobre cómo agrupar scripts en ScriptManager, consulte http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Scripts de marco--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Scripts del sitio--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+          <div class="MenuBar">
+            
+               <asp:Menu ID="mnuPrincipal"                          
+                       
+                         StaticMenuStyle-CssClass= "nav"
+                         StaticSelectedStyle-CssClass="active"
+                         DynamicMenuStyle-CssClass ="dropdown-menu"
+                         runat="server" 
+                         EnableViewState="false"
+                         IncludeStyleBlock="false"
+                         DynamicHorizontalOffset="5" 
+                         Orientation="Horizontal" 
+                         Font-Bold="True" 
+                         ForeColor="#660000">                 
+
+                </asp:Menu>
+          </div>
+
+        <!-- 
+        <div>
+           <div class="container">  
+
+                <div style="width: 150px">
+                    <ul id="menu"></ul>
+                </div>               
+
+            </div>
+        </div>              
+
+        <div>
+            <fieldset style="width: 119px; height: 160px; padding: 30px;">
+                <legend>jQuery Dropdown</legend>
+                <div class="dropdown">
+
+                    
+                    <a class="mainmenu toggle-login">Cuenta<span class="icon">?</span></a>
+                    <div class="submenu">
+                        <ul class="menuitems">
+                            <li><a href="#">Configurar Cuenta</a></li>
+                            <li><a href="#">Privacy setting</a></li>
+                            <li><a href="#">Salir</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+
+            </fieldset>
+        </div>
+
+        -->
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+            </footer>
+        </div>
+              
+    </form>
+</body>
+</html>

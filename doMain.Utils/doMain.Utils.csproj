@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE208410-0796-46E8-B436-98B15209952F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>doMain.Utils</RootNamespace>
+    <AssemblyName>doMain.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\doMain.Utils.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=18.5.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="doMain.Utils">
+      <HintPath>bin\Debug\doMain.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyUtils.cs" />
+    <Compile Include="AsyncUtils.cs" />
+    <Compile Include="Base64Utils.cs" />
+    <Compile Include="BytesUtils.cs" />
+    <Compile Include="CharacterUtils.cs" />
+    <Compile Include="clsEnumGeneric.cs" />
+    <Compile Include="DbUtils.cs" />
+    <Compile Include="EncryptorUtils.cs" />
+    <Compile Include="ExportarUtils.cs" />
+    <Compile Include="ExpressionUtils.cs" />
+    <Compile Include="FechaNulaUtils.cs" />
+    <Compile Include="HandledException.cs" />
+    <Compile Include="HtmlUtils.cs" />
+    <Compile Include="IpUtils.cs" />
+    <Compile Include="MacUtils.cs" />
+    <Compile Include="PasswordUtils.cs" />
+    <Compile Include="PcUtils.cs" />
+    <Compile Include="PdfUtils.cs" />
+    <Compile Include="ProcessUtils.cs" />
+    <Compile Include="ReadOnlyKeyValueList.cs" />
+    <Compile Include="ReflectionUtils.cs" />
+    <Compile Include="CollectionUtils.cs" />
+    <Compile Include="ColorUtils.cs" />
+    <Compile Include="CompressionUtils.cs" />
+    <Compile Include="ConfigurationUtils.cs" />
+    <Compile Include="Constantes.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="CsvUtils.cs" />
+    <Compile Include="DataTableUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateInterval.cs" />
+    <Compile Include="DateTimeUtils.cs" />
+    <Compile Include="CryptoUtils.cs" />
+    <Compile Include="DecimalUtils.cs" />
+    <Compile Include="DisplayText.cs" />
+    <Compile Include="EnumUtils.cs" />
+    <Compile Include="FileUtils.cs" />
+    <Compile Include="FolderUtils.cs" />
+    <Compile Include="ImageUtils.cs" />
+    <Compile Include="IniReader.cs" />
+    <Compile Include="JavaScriptSerializer.cs" />
+    <Compile Include="RandomUtils.cs" />
+    <Compile Include="SerializeUtils.cs" />
+    <Compile Include="LinqUtils.cs" />
+    <Compile Include="MailUtils.cs" />
+    <Compile Include="NumbersToLetters.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegEditUtils.cs" />
+    <Compile Include="Registro.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEngineUtils.cs" />
+    <Compile Include="StreamUtils.cs" />
+    <Compile Include="StringUtils.cs" />
+    <Compile Include="TypeUtils.cs" />
+    <Compile Include="UpdaterUtils.cs" />
+    <Compile Include="VariablesUtils.cs" />
+    <Compile Include="WebApiUtils.cs" />
+    <Compile Include="WebControlUtils.cs" />
+    <Compile Include="WinApiUtils.cs" />
+    <Compile Include="WinFormUtils.cs" />
+    <Compile Include="XmlUtils.cs" />
+    <Compile Include="ZipUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Utils", "doMain.Utils.csproj", "{BE208410-0796-46E8-B436-98B15209952F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.CrossCutting", "..\doMain.CrossCutting\doMain.CrossCutting.csproj", "{F8B73C52-4000-48CB-80FB-F435531E02F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Architecture", "..\doMain.Architecture\doMain.Architecture.csproj", "{1F6150AA-54B1-46D5-B9CA-7EAA837C6C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Persistence.EF6", "..\doMain.Persistence.EF6\doMain.Persistence.EF6.csproj", "{0BDBACB0-7900-4C4A-A5CF-DB1831F247CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Persistence.LiteDB", "..\doMain.Persistence.LiteDB\doMain.Persistence.LiteDB.csproj", "{0ECB7D49-F2B5-4029-974A-3CCA21C292B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.DigitalSignature.Core", "..\doMain.DigitalSignature.Core\doMain.DigitalSignature.Core.csproj", "{72663E69-14E9-4C18-A280-A54B3590B9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Presentation.Mvc", "..\doMain.Presentation.Mvc\doMain.Presentation.Mvc.csproj", "{FBDEB12B-0EE1-4B70-8547-EAD10E3119C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMainCodeGenerator", "..\doMainCodeGenerator\doMainCodeGenerator.csproj", "{3D33D808-A4CC-4107-BD62-3B9BD759A004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.DataBase", "..\doMain.DataBase\doMain.DataBase.csproj", "{DF518147-CF61-4D13-AC09-5C8535E70E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Generator", "..\doMain.Generator\doMain.Generator.csproj", "{7210E4AA-8925-4A0A-B29B-2124C8164724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.Win.Controls.Data", "..\doMain.Win.Controls.Data\doMain.Win.Controls.Data.csproj", "{FF7E5224-BE5B-4C28-BDB6-AECACBAABAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doMain.CodeSnippets", "..\doMain.CodeSnippets\doMain.CodeSnippets.csproj", "{616BE1C9-A402-41D0-A3E1-B3516B918A06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE208410-0796-46E8-B436-98B15209952F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE208410-0796-46E8-B436-98B15209952F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE208410-0796-46E8-B436-98B15209952F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE208410-0796-46E8-B436-98B15209952F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B73C52-4000-48CB-80FB-F435531E02F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B73C52-4000-48CB-80FB-F435531E02F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B73C52-4000-48CB-80FB-F435531E02F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B73C52-4000-48CB-80FB-F435531E02F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6150AA-54B1-46D5-B9CA-7EAA837C6C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6150AA-54B1-46D5-B9CA-7EAA837C6C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6150AA-54B1-46D5-B9CA-7EAA837C6C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6150AA-54B1-46D5-B9CA-7EAA837C6C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDBACB0-7900-4C4A-A5CF-DB1831F247CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDBACB0-7900-4C4A-A5CF-DB1831F247CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDBACB0-7900-4C4A-A5CF-DB1831F247CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDBACB0-7900-4C4A-A5CF-DB1831F247CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECB7D49-F2B5-4029-974A-3CCA21C292B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECB7D49-F2B5-4029-974A-3CCA21C292B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECB7D49-F2B5-4029-974A-3CCA21C292B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECB7D49-F2B5-4029-974A-3CCA21C292B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72663E69-14E9-4C18-A280-A54B3590B9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72663E69-14E9-4C18-A280-A54B3590B9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72663E69-14E9-4C18-A280-A54B3590B9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72663E69-14E9-4C18-A280-A54B3590B9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDEB12B-0EE1-4B70-8547-EAD10E3119C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDEB12B-0EE1-4B70-8547-EAD10E3119C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDEB12B-0EE1-4B70-8547-EAD10E3119C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDEB12B-0EE1-4B70-8547-EAD10E3119C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D33D808-A4CC-4107-BD62-3B9BD759A004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D33D808-A4CC-4107-BD62-3B9BD759A004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D33D808-A4CC-4107-BD62-3B9BD759A004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D33D808-A4CC-4107-BD62-3B9BD759A004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF518147-CF61-4D13-AC09-5C8535E70E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF518147-CF61-4D13-AC09-5C8535E70E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF518147-CF61-4D13-AC09-5C8535E70E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF518147-CF61-4D13-AC09-5C8535E70E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7210E4AA-8925-4A0A-B29B-2124C8164724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7210E4AA-8925-4A0A-B29B-2124C8164724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7210E4AA-8925-4A0A-B29B-2124C8164724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7210E4AA-8925-4A0A-B29B-2124C8164724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7E5224-BE5B-4C28-BDB6-AECACBAABAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7E5224-BE5B-4C28-BDB6-AECACBAABAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7E5224-BE5B-4C28-BDB6-AECACBAABAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7E5224-BE5B-4C28-BDB6-AECACBAABAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616BE1C9-A402-41D0-A3E1-B3516B918A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616BE1C9-A402-41D0-A3E1-B3516B918A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616BE1C9-A402-41D0-A3E1-B3516B918A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616BE1C9-A402-41D0-A3E1-B3516B918A06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://domain2projects.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = doMain.Utils.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\doMain.CrossCutting\\doMain.CrossCutting.csproj
+		SccProjectName2 = ../doMain.CrossCutting
+		SccLocalPath2 = ..\\doMain.CrossCutting
+		SccProjectUniqueName3 = ..\\doMain.Architecture\\doMain.Architecture.csproj
+		SccProjectName3 = ../doMain.Architecture
+		SccLocalPath3 = ..\\doMain.Architecture
+		SccProjectUniqueName4 = ..\\doMain.Persistence.EF6\\doMain.Persistence.EF6.csproj
+		SccProjectName4 = ../doMain.Persistence.EF6
+		SccLocalPath4 = ..\\doMain.Persistence.EF6
+		SccProjectUniqueName5 = ..\\doMain.Persistence.LiteDB\\doMain.Persistence.LiteDB.csproj
+		SccProjectName5 = ../doMain.Persistence.LiteDB
+		SccLocalPath5 = ..\\doMain.Persistence.LiteDB
+		SccProjectUniqueName6 = ..\\doMain.DigitalSignature.Core\\doMain.DigitalSignature.Core.csproj
+		SccProjectName6 = ../doMain.DigitalSignature.Core
+		SccLocalPath6 = ..\\doMain.DigitalSignature.Core
+		SccProjectUniqueName7 = ..\\doMain.Presentation.Mvc\\doMain.Presentation.Mvc.csproj
+		SccProjectName7 = ../doMain.Presentation.Mvc
+		SccLocalPath7 = ..\\doMain.Presentation.Mvc
+		SccProjectUniqueName8 = ..\\doMainCodeGenerator\\doMainCodeGenerator.csproj
+		SccProjectName8 = ../doMainCodeGenerator
+		SccLocalPath8 = ..\\doMainCodeGenerator
+		SccProjectUniqueName9 = ..\\doMain.DataBase\\doMain.DataBase.csproj
+		SccProjectName9 = ../doMain.DataBase
+		SccLocalPath9 = ..\\doMain.DataBase
+		SccProjectUniqueName10 = ..\\doMain.Generator\\doMain.Generator.csproj
+		SccProjectName10 = ../doMain.Generator
+		SccLocalPath10 = ..\\doMain.Generator
+		SccProjectUniqueName11 = ..\\doMain.Win.Controls.Data\\doMain.Win.Controls.Data.csproj
+		SccProjectName11 = ../doMain.Win.Controls.Data
+		SccLocalPath11 = ..\\doMain.Win.Controls.Data
+		SccProjectUniqueName12 = ..\\doMain.CodeSnippets\\doMain.CodeSnippets.csproj
+		SccProjectName12 = ../doMain.CodeSnippets
+		SccLocalPath12 = ..\\doMain.CodeSnippets
+	EndGlobalSection
+EndGlobal

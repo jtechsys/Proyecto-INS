@@ -1,0 +1,86 @@
+﻿.MenuBar
+{
+	padding: 0 10px 0 10px;
+	background-color: #dedede;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5f5f5f;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; /*border-radius: 5px;*/
+	font: 14px calibri;
+	width: 935px;
+	margin: auto;
+	border-left: 0px solid #5B5C3A;
+	border-right: 0px solid #5B5C3A;
+	border-top: 2px solid #5B5C3A;
+	border-bottom: 2px solid #5B5C3A;
+	vertical-align: top;
+	border-spacing: 0px;
+	background-image: url( 'mainbk.png' );
+	background-repeat: repeat-x;
+	height: 20px;
+	font-weight: bold;
+}
+
+.StaticMenuItem
+{
+	text-align: left;
+	border-width: 0;
+	font: small Raavi;
+	color: #FFFFFF;
+	text-decoration: none; /*text-shadow: #FFF 0 0 0;*/
+	text-transform: capitalize;
+	padding-right: 4px;
+	padding-left: 4px;
+	height: 20px;
+	font: 14px WST_Engl;
+	font-weight: bold;
+}
+
+.DynamicMenuItem
+{
+	text-align: left;
+	border-width: 0;
+	font: 14px WST_Engl;
+	color: #FFF;
+	text-decoration: none; /*text-shadow: #FFF 0 0 0;*/
+	background-color: #424542;
+	padding-right: 4px;
+	padding-left: 4px;
+	height: 20px;
+}
+
+.staticHover
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; /*border-radius: 5px;*/
+	background-image: url( "MHovr.png" );
+	background-repeat: repeat-x;
+	text-align: left;
+	border-width: 0;
+	font: 14px WST_Engl;
+	color: #FFF;
+	text-decoration: none; /*text-shadow: #FFF 0 0 0;*/
+	background-color: #424542;
+	padding-right: 4px;
+	padding-left: 4px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.DynamicHover
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; /*border-radius: 5px;*/
+	text-align: left;
+	border-width: 0;
+	font: 14px WST_Engl;
+	color: #FFF;
+	text-decoration: none; /*text-shadow: #FFF 0 0 0;*/
+	background-color: #424542;
+	padding-right: 4px;
+	padding-left: 4px;
+	background-image: url( "MHovr.png" );
+	background-repeat: repeat-x;
+	height: 20px;
+}

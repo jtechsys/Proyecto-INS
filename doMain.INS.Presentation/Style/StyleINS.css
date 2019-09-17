@@ -1,0 +1,729 @@
+﻿/* Inicio Estilos page */
+body {    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.header {
+    min-height: 150px;
+    background: url(../Images/head.png) no-repeat center right; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .title-mtc {
+	background: url(../Images/Logo.png) no-repeat top left; 
+  	position: absolute;
+  	top: 1px;
+  	right: 25px;
+  	width: 250px;
+  	height: 250px;
+  	z-index: 5;
+}
+.header .title {
+	background: url(../Images/bg_title.png) no-repeat top left; 
+  	position: absolute;
+  	bottom: 15%;
+  	left: 0;
+  	width: 620px;
+  	height: 50px;
+  	z-index: 10;
+}
+.header .title h1  {
+  	font-family: Arial;
+  	font-size: 22px;
+  	font-weight: 400;
+  	color: #444;
+  	padding: 12px
+}
+.footer {
+    text-align:center
+}
+.lblTitulo {
+    color:#5aaad4
+}
+.main {
+	font-family: Arial;
+	font-size: 12px;
+	color: #333
+}
+#MainContent_PnlBlotter {
+	/*background: #e4e4e4;*/
+    overflow:hidden
+}
+#divfiltro {
+	/*background: #f1f1f1;*/
+	border: 1px solid #8c8c8c;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+	padding: 10px;
+	margin: 15px
+}
+
+#divfiltro input {
+	margin: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:1px solid #8c8c8c
+}
+
+#divOperaciones fieldset,
+.div-View-grid {
+	/*background: #f1f1f1;*/
+	border: 1px solid #8c8c8c;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+	padding: 5px;
+	margin: 15px
+}
+
+.div-View-grid {
+    padding:15px 5px 5px 5px
+}
+
+.headerStyle {
+	background: #5aaad4;
+	color: #fff
+}
+
+.rowStyle {
+	background: #fff;
+}
+
+.gridStyle tr th,
+.gridStyle tr td
+ {
+    padding:5px
+}
+.ModalPopupBG {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.PopupOperacion2 table tr input {
+	margin: 5px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:1px solid #d4d3d3
+}
+
+.gridStyle {
+    margin-top:10px;
+}
+
+/* Inicio Estilos Popup */
+
+.popupmaster {
+    padding: 25px;
+    position:relative
+}
+.popupmaster-table {
+    padding:0;
+    margin:0;
+    width:100%
+}
+.popupmaster .btnCerrar {
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
+.ui-dialog {
+    z-index:9999
+}
+.PopupOperacionDelete {
+    border:1px solid #d4d3d3;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.PopupOperacionDelete .Msj-title {
+    margin:2px;
+    padding:10px 15px;
+    background:#5aaad4;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.PopupOperacionDelete .Msj-body {
+    padding:15px;;
+    text-align:center
+}
+.PopupOperacionDelete .Msj-body .texto {
+    padding:0 0 15px 0;
+    width:100%;
+    display:block;
+    text-align:center;
+    margin-bottom:15px;
+    border-bottom:1px solid #d4d3d3
+}
+.PopupOperacionDelete .Msj-body .btn-right {
+    float:right;
+    margin-left:15px;
+    margin-bottom:15px
+}
+
+.popupmaster-table i.verde {
+    color:#217346;
+}
+.popupmaster-table a i {
+    font-size: 24px;
+    color: #8c8c8c;
+    vertical-align: bottom;
+}
+.popupmaster-table a:hover i,
+.popupmaster-table a:hover i span {
+    color: #5aaad4;
+}
+.popupmaster-table a i span {
+    font-size: 14px;
+    line-height:24px;
+    color: #8c8c8c;
+    vertical-align: bottom;
+    padding-left:5px;
+    font-family:Arial, sans-serif
+}
+
+.menubar table a i {
+    font-size: 20px;
+    color: #fff;
+    vertical-align: bottom;
+    float:right;
+    padding: 0 20px
+}
+.menubar table a i span {
+    font-size: 13px;
+    line-height:20px;
+    color: #fff;
+    vertical-align: bottom;
+    padding-left:5px;
+    font-family:Arial, sans-serif
+}
+.menubar {
+	background: #5aaad4;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+   .menu {
+	background: #5aaad4;
+	font-family: Arial;
+	font-size: 14px;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li ul {
+	display: inline-block;
+}
+.menu ul li a {
+	padding: 10px;
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menu ul li a:hover {
+	background: #5aaad4
+}
+
+/* Fin Estilos Popup */
+
+/* Inicio Estilos GridView */
+
+.div-View-grid a i {
+    font-size: 24px;
+    color: #8c8c8c;
+    vertical-align: bottom;
+}
+
+.div-View-grid .btnverde {
+    width:35px;
+    height:35px;
+    background:#217346;
+    -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+text-align:center;
+display:block;
+padding:8px 0 0 0
+}
+.div-View-grid a.btnverde i {
+    font-size: 18px;
+    color: #fff;
+    vertical-align: bottom;
+}
+.gridStyle a i {
+    font-size: 24px;
+    color: #8c8c8c;
+    vertical-align: bottom;
+}
+.gridStyle a:hover i {
+    color: #5aaad4;
+}
+
+.divGrid
+    {
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: #4d4d4d;
+	    overflow:auto;
+    }
+
+  .CustomGrid
+    {
+	    table-layout: fixed;
+	    width:902px;
+	    cursor: pointer;
+    }
+
+    .GridRowSelect
+    {
+	    background-color: #4B4B4B;
+	    cursor: pointer;
+    }
+
+    .GridRowHover
+    {
+	    background-color: #FFFFE1;
+	    cursor: pointer;
+    }
+
+    .GridPager span
+    {
+	    border: 1px solid #787878;
+	    background-color: #434345;
+	    font-size: 12px;
+	    padding: 4px;
+	    color: #B4B4B4;
+    } 
+
+    .GridPager td
+    {
+          padding-left: 2px;      
+          padding-right: 2px;
+          padding-top:5px;
+          padding-bottom:5px;    
+    }
+
+    .GridHeader
+    {
+	    margin: 0px;
+	    border: 1px solid #4D4D4D;
+	    background-position: left top;
+	    font-family: Tahoma;
+	    letter-spacing:1pt;
+	    font-size: 8pt;
+	    text-decoration: none;
+	    font-weight: normal;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    color: #E5E5E5;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 3px 6px 3px 6px;
+	    background-image: url('Imagenes/Header_Grid.png' );
+	    background-repeat: repeat-x;
+	    background-color:#4B4B4B;
+	    word-wrap: break-word;
+	    text-overflow:ellipsis;
+	    overflow:hidden; 
+	    white-space: -moz-pre-wrap !important;
+    }
+
+    .GridHeader A
+    {
+	    font-family: Tahoma;
+	    letter-spacing:1pt;
+	    font-size: 8pt;
+	    text-decoration: none;
+	    font-weight: normal;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    color: #E5E5E5;
+	    text-align: center;
+	    vertical-align: middle;
+    }
+ .GridLine
+    {
+	    border: .25px solid #4D4D4D;
+    }
+
+    .GridItem1
+    {
+	    border: 1px solid #4D4D4D;
+	    text-align: left;
+	    vertical-align: middle;
+	    padding: 4px 6px 4px 6px;
+	    font-family: Verdana;
+	    font-size: 8pt;
+	    color: #000000;
+	    font-weight: normal;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    word-wrap: break-word;
+	    text-overflow:ellipsis;
+	    overflow:hidden; 
+	    white-space:nowrap; 
+    }
+
+
+    div#customGridDiv 
+    {
+	    overflow: scroll;
+	    position: relative;
+    }
+
+    div#customGridDiv th
+    {
+	    top: expression(document.getElementById("customGridDiv").scrollTop-2);
+	    left: expression(parentNode.parentNode.parentNode.parentNode.scrollLeft);
+	    position: relative;
+	    z-index: 20;
+    }
+
+ .GridPagePreviousInactive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginPreInactive.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+    }
+
+    .GridPagePreviousActive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginPre.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .GridPageNextInactive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginNextInactive.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+    }
+
+    .GridPageNextActive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginNext.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .GridPageFirstInactive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginFirstInactive.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+    }
+
+    .GridPageFirstActive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginFirst.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .GridPageLastInactive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginLastInactive.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+    }
+
+    .GridPageLastActive
+    {
+        background-position: center center;
+        background-image: url(../Images/PaginLast.gif);
+        text-decoration:none;
+        border-width:0px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }  
+
+/* Fin Estilos GridView */
+
+ /* Fin Estilos page */
+/* Inicio Estilos Accordion */
+  .accordionHeader
+    {
+        /*border: 1px solid #2F4F4F;*/
+        /*border: 1px solid #cccccc;*/
+        color: #696969;
+        /*background-color: #2E4d7B;*/
+        background-color:white;
+        font-family: Arial, Sans-Serif;
+        /*font-size: 12px;*/
+        font-weight: bold;
+        padding: 5px;
+        margin-top: 5px;
+        cursor: pointer;       
+    }
+
+    #master_content .accordionHeader a
+    {
+        color: #FFFFFF;
+        background: none;
+        text-decoration: none;                    
+    }
+
+    #master_content .accordionHeader a:hover
+    {
+        background: none;
+        text-decoration: underline;
+    }
+
+    .accordionHeaderSelected
+    {                
+        border: 1px solid #cccccc;
+        color: #696969;
+        /*background-color: #5078B3;*/
+        background-color:white;
+        font-family: Arial, Sans-Serif;
+        /*font-size: 12px;*/
+        font-weight: bold;
+        padding: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .accordionContent 
+    {
+    border: 1px solid #cccccc;
+    }         
+
+/* Fin Estilos Accordion */
+
+/* Inicio Estilos Ocultar Div*/
+
+.titulo_boton {
+  float:left; 
+  padding:5px;  
+  /*background-color:#e6e6e6;*/
+  width:400px;
+  font-family:helvetica;
+  font-size:12px;
+  font-weight:bold;
+  text-align:left;
+}
+
+.boton_mostrar {
+  float:right;
+  font-size:12px;
+  line-height:20px;
+  color:#DE7217;
+}
+
+#contenido{
+  float:left;
+  clear:both;
+  /*border:2px solid #e6e6e6;*/
+  margin-top:2px;
+  padding:5px;
+  width:900px;
+  overflow:auto;
+  font-family:helvetica;
+  font-size:14px;
+  text-align: justify;
+}
+
+/* Fin Estilos Ocultar Div */
+
+/*Inicio estilo de mensaje de alerta*/
+
+.messagealert {
+            width: 100%;
+            position: fixed;
+             top:0px;
+            z-index: 100000;
+            padding: 0;
+            font-size: 15px;
+        }
+
+/*Fin estilo de mensaje de alerta*/
+
+/*Inicio estilo Tab de Contenedor*/
+/*Header*/
+.Tab .ajax__tab_header
+{
+    color: #4682b4;
+    font-family:Calibri;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    margin-left: 0px;
+}
+/*Body*/
+.Tab .ajax__tab_body
+{
+    border:1px solid #b4cbdf;
+    padding-top:0px;
+}
+/*Tab Active*/
+.Tab .ajax__tab_active .ajax__tab_tab {
+    color: #ffffff;
+    background: url("../Images/tab_active.gif") repeat-x;
+    height: 20px;    
+}
+.Tab .ajax__tab_active .ajax__tab_inner
+{
+    color: #ffffff;
+    background:url("../Images/tab_left_active.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_active .ajax__tab_outer
+{
+    color: #ffffff;
+    background:url("../Images/tab_right_active.gif") no-repeat right;
+    padding-right:6px;
+}
+/*Tab Hover*/
+.Tab .ajax__tab_hover .ajax__tab_tab
+{
+    color: #000000;
+    background:url("../Images/tab_hover.gif") repeat-x;    
+    height:20px;
+}
+.Tab .ajax__tab_hover .ajax__tab_inner
+{
+    color: #000000;
+    background:url("../Images/tab_left_hover.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_hover .ajax__tab_outer
+{
+    color: #000000;
+    background:url("../Images/tab_right_hover.gif") no-repeat right;
+    padding-right:6px;
+}
+/*Tab Inactive*/
+.Tab .ajax__tab_tab
+{
+    color: #666666;
+    background:url("../Images/tab_Inactive.gif") repeat-x;    
+    height:20px;
+}
+.Tab .ajax__tab_inner
+{
+    color: #666666;
+    background:url("../Images/tab_left_inactive.gif") no-repeat left;
+    padding-left:10px;
+}
+.Tab .ajax__tab_outer
+{
+    color: #666666;
+    background:url("../Images/tab_right_inactive.gif") no-repeat right;
+    padding-right:6px;
+    margin-right: 2px;
+}
+/*Fin estilo Tab de Contenedor*/
+
+
+/*Inicio estilo de pagina logeo*/
+
+.bg_login {
+margin:0;
+padding:0;
+background: url(../Images/bg_login.png) center center no-repeat fixed;
+background-size: cover;
+height: 100%;
+overflow: hidden;
+}
+
+.login_center-mtc {
+	margin: 4% auto 0 32%;
+	padding: 15px;
+	width: 250px;
+	height: auto;
+	text-align: center;
+}
+.login_center {
+	margin: 0 auto;
+	padding: 15px;
+	width: 250px;
+	height: auto;
+	background: #f1f1f1;
+	border: 1px solid #8c8c8c;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Arial;
+}
+.login_center h2 {
+  	font-size: 18px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	color: #5aaad4;
+  	padding: 0;
+  	margin: 0 0 20px 0;
+  	text-align: center;
+}
+.login_center .editor-field input {
+  	width: 100%;
+      border: 1px solid #8c8c8c;
+}
+.login_center .editor-label {
+  	padding: 5px 0
+}
+.login_center .acceder {
+  	margin: 10px 0;
+  	padding: 10px;
+  	background: #5aaad4;
+  	border: 0;
+  	color: #fff;
+  	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.dxm-gutter .dxm-item {
+        overflow:hidden;
+        border:0 !Important;
+        padding:0 !Important
+}
+
+.dxm-gutter .dx-vam {
+        color:#fff !Important;
+        padding:0 !Important;
+}
+
+.dxb .dx-vam {
+    color: #fff !Important;
+    padding: 5px !Important;
+}
+/*Fin estilo de pagina de logeo*/
+
+
+

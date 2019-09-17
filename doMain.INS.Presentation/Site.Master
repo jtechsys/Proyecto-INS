@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="doMain.INS.Presentation.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>    
+    <link href="~/Style/StyleINS.css" rel="stylesheet" />           
+    <link href="~/Style/font-awesome.min.css" rel="stylesheet" />        
+    <link href="~/Style/bootstrap.min.css" rel="stylesheet" />
+      
+    <script type="text/javascript">
+
+        //Disable the default MouseOver functionality of ASP.Net Menu control.
+        Sys.WebForms.Menu._elementObjectMapper.getMappedObject = function () {
+            return false;
+        };
+
+        $(function () {                    
+            //Remove the style attributes.
+            $(".navbar-nav li, .navbar-nav a, .navbar-nav ul").removeAttr('style');
+
+            //Apply the Bootstrap class to the SubMenu.
+            $(".dropdown-menu").closest("li").removeClass().addClass("dropdown-toggle");
+
+            //Apply the Bootstrap properties to the SubMenu.
+            $(".dropdown-toggle").find("a").eq(0).attr("data-toggle", "dropdown").attr("aria-haspopup", "true").attr("aria-expanded", "false").append("<span class='caret'></span>");
+
+            //Apply the Bootstrap "active" class to the selected Menu item.
+            $("a.selected").closest("li").addClass("active");
+            $("a.selected").closest(".dropdown-toggle").addClass("active");
+           
+        });
+    </script>       
+   
+</head>
+
+<body>
+    <form  id="frmRol" runat="server">           
+
+         <div class="page">
+              <div class="header">
+                  <div class="title-mtc">
+                  </div>
+                  <div class="title">
+                        <h1>SISTEMA DE SEGUIMIENTO DE EXPEDIENTE</h1>
+                  </div>
+              </div>
+         </div>
+
+         <div class="clear hideSkiplink menubar">
+
+             <table style="width:100%">
+                 <tr>
+                      <td style="width:40%;">
+
+                           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <asp:Menu ID="mnuPrincipal"                                                                          
+                                         StaticMenuStyle-CssClass= "nav"
+                                         StaticSelectedStyle-CssClass="active"
+                                         DynamicMenuStyle-CssClass ="dropdown-menu"
+                                         runat="server" 
+                                         EnableViewState="false"
+                                         IncludeStyleBlock="false"
+                                         RenderingMode="List"
+                                         DynamicHorizontalOffset="7" 
+                                         Orientation="Horizontal" 
+                                         Font-Bold="True" 
+                                         ForeColor="#660000">               
+                                         <DynamicMenuStyle BorderColor="#660000" BorderWidth="1px" Width="140px"  />
+                                         <DynamicMenuItemStyle HorizontalPadding="3px" VerticalPadding="2px" />
+                                         <DynamicHoverStyle BackColor="#660000" Font-Bold="True" ForeColor="White" />
+                                         <StaticMenuStyle BackColor="#B1C3D9" />
+                                         <StaticMenuItemStyle HorizontalPadding="2px" VerticalPadding="2px" Width="80px" />
+                                         <DynamicSelectedStyle BackColor="#00C000" />
+                                    </asp:Menu>
+                           </div>
+
+                      </td>
+                     <td style=" width:20%; text-align:left;">
+                         <asp:Label ID="lblLogeo" runat="server" Text="Label" ForeColor="White" Font-Size="Small"></asp:Label>
+                         &nbsp;
+                         <asp:Label ID="lblArea" runat="server" Text="Label" ForeColor="White" Font-Size="Small"></asp:Label>
+                     </td>                      
+                     <td style="width:20%;">
+                        <asp:LinkButton ID="btnCerrar" CssClass="cerrar" runat="server"  OnClick="btnCerrar_Click"><i class="fa fa-sign-out"><span>Cerrar Sesión</span></i></asp:LinkButton>  
+                    </td>
+                 </tr>
+               
+             </table>
+
+        
+         </div>
+
+         <div class="MenuBar">
+         </div>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>                      
+        </div>
+
+        <div style="clear:both"></div>
+        <div class="footer">
+                © Gerencia de Proyectos - OTI. Todos los Derechos Reservados.              
+        </div>
+              
+    </form>
+</body>
+</html>
